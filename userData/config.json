@@ -40,7 +40,7 @@
       "gmx.at": "imap.gmx.net",
       "gmx.net": "imap.gmx.net",
       "gmail.com": "imap.gmail.com",
-      "outlook.com": "outlook.office365.com"
+      "outlook.com": "imap-mail.outlook.com"
     }
   }
 }
