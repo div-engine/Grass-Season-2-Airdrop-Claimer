@@ -412,7 +412,7 @@ All modules are accessed through the web interface at `http://localhost:5555` af
 
 ### Optimize Bot Performance
 
-1. **Proxy Quality** - Use residential or datacenter proxies
+1. **Proxy Quality** - Use residential proxies
 2. **Connection Timing** - Space out connections (500-1000ms delay)
 3. **Monitor & Restart** - Restart bot daily to refresh connections
 
@@ -451,37 +451,9 @@ This software is provided "as is", without warranty of any kind. Use at your own
 
 ---
 
-## 🙏 Acknowledgments
-
-- **Solana Foundation** - For the excellent blockchain infrastructure
-- **Grass.io Team** - For the innovative bandwidth sharing protocol
-- **Community Contributors** - For testing, feedback, and improvements
-
----
-
-## 📞 Support
-
-- **Issues:** [GitHub Issues](../../issues)
-- **Discussions:** [GitHub Discussions](../../discussions)
-- **Updates:** Watch this repository for updates
-
----
-
-## 🗺️ Roadmap
-
-- [ ] Multi-chain support (Ethereum, BSC)
-- [ ] Advanced analytics dashboard
-- [ ] Automated proxy rotation service
-- [ ] Mobile app support
-- [ ] Docker containerization
-- [ ] Linux/Mac builds
-
----
-
 ## 📈 Stats
 
 - **Supported Accounts:** Unlimited
-- **Concurrent Claims:** 1-10 (configurable)
 - **Average Claim Time:** 3-5 seconds per wallet
 - **Success Rate:** 95%+ with premium RPC
 - **Transaction Fees:** ~0.000005 SOL per transaction
