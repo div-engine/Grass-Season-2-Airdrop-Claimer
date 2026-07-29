@@ -70,7 +70,7 @@ Automated farming bot that maintains persistent connections to Grass network.
 Generate authentication tokens from account credentials.
 
 **Supported Formats:**
-- `email:email_password:account:account_password`
+- `account:account_password`
 - One account per line
 
 **Features:**
@@ -84,9 +84,6 @@ Generate authentication tokens from account credentials.
 - Valid captcha service API key configured in `config.json`
 
 **Input File:** `userData/data/accs.txt`
-
-**Supported Formats:**
-- Email:Password
 
 **Features:**
 - Automatic token extraction
