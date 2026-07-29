@@ -65,12 +65,28 @@ Automated farming bot that maintains persistent connections to Grass network.
 **How to Use:**
 1. Open the web interface at `http://localhost:5555`
 
-#### 2. **Account Import**
+#### 2. **Account Login & Token Generation**
 
-Import Grass accounts
+Generate authentication tokens from account credentials.
 
 **Supported Formats:**
-- Email:Password pairs
+- `email:email_password:account:account_password`
+- One account per line
+
+**Features:**
+- Automatic login and token extraction
+- Session management
+- Token refresh
+- Bulk import support
+- **Automatic captcha solving** (2Captcha/CapMonster/CapSolver)
+
+**Requirements:**
+- Valid captcha service API key configured in `config.json`
+
+**Input File:** `userData/data/accs.txt`
+
+**Supported Formats:**
+- Email:Password
 
 **Features:**
 - Automatic token extraction
