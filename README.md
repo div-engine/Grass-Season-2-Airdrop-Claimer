@@ -25,7 +25,7 @@ A comprehensive automation tool for Grass.io airdrop claiming and Solana wallet 
 
 1. Download the latest release from [Releases](../../releases)
 2. Extract the ZIP file to any location
-3. Double-click `START.bat` or `GrassSol.exe`
+3. Run `GrassSol.exe`
 4. The application will start automatically
 5. Open your browser to `http://localhost:5555`
 6. Use the web interface to manage all operations
@@ -42,7 +42,9 @@ A comprehensive automation tool for Grass.io airdrop claiming and Solana wallet 
 
 ### 🌿 Grass Modules
 
-#### 1. **Grass Bot (Standard & 3x)**
+<img width="544" height="538" alt="1" src="https://github.com/user-attachments/assets/5ab88d38-9b0d-478c-a8ae-be984b18ec72" />
+
+#### 1. **Grass Bot**
 
 Automated farming bot that maintains persistent connections to Grass network.
 
@@ -56,32 +58,16 @@ Automated farming bot that maintains persistent connections to Grass network.
 **Configuration Files:**
 - `userData/data/tokens.txt` - Account tokens (one per line)
 - `userData/data/proxies.txt` - Proxy list (HTTP/HTTPS/SOCKS5)
-- `Engine/grass/settings.json` - Bot configuration
-
-**Settings:**
-```json
-{
-  "delayBetweenConnectionsMs": 500,
-  "maxReconnectAttempts": 5,
-  "connectionTimeoutMs": 30000
-}
-```
+- `userData/config.json` - APP configuration
 
 **How to Use:**
 1. Open the web interface at `http://localhost:5555`
-2. Navigate to **Grass Bot** section
-3. Click **"Start Grass Bot"** or **"Start Grass 3x Bot"**
-4. Monitor status in real-time on the dashboard
-
----
 
 #### 2. **Account Import**
 
-Import Grass accounts from browser extensions or exported data.
+Import Grass accounts
 
 **Supported Formats:**
-- Browser extension export (JSON)
-- Token list (text file)
 - Email:Password pairs
 
 **Features:**
@@ -89,7 +75,7 @@ Import Grass accounts from browser extensions or exported data.
 - Validation and deduplication
 - Bulk import support
 
-**Input File:** `userData/data/accounts-import.json`
+**Input File:** `userData/data/accs.txt`
 
 ---
 
@@ -103,7 +89,7 @@ email1@example.com - TOKEN_STRING_1
 email2@example.com - TOKEN_STRING_2
 ```
 
-**Output File:** `userData/results/tokens-export.txt`
+**Output File:** `userData/results/tokens.txt`
 
 ---
 
@@ -141,6 +127,10 @@ Headless USDC airdrop claiming with automatic $0.01 donation feature.
 
 **Claim Flow:**
 
+<img width="687" height="193" alt="5" src="https://github.com/user-attachments/assets/4ae7687b-0556-4e83-9b77-b8ad6f19e450" />
+
+Overall Fees for 1 Claim: **~0.00132 SOL**
+
 **Without Auto-Collect:**
 1. ✅ Claim USDC from airdrop
 2. ✅ Send $0.01 USDC to `8JEMnNUT8Uwmkd2DDuZiXewWA4tbCt5YDfY8ffJ5GwyW`
@@ -158,23 +148,10 @@ Headless USDC airdrop claiming with automatic $0.01 donation feature.
 - Account tokens with proxy assignment
 - Sufficient SOL for transaction fees (~0.000005 SOL per tx)
 
-**Configuration:**
-```javascript
-{
-  concurrency: 3,              // Parallel claims
-  autoReclaim: true,           // Auto-collect USDC
-  autoCollectSol: true,        // Sweep remaining SOL
-  collectAddress: "YOUR_MAIN_WALLET_ADDRESS",
-  priorityFeeMicroLamports: 0  // Priority fee (0 = base fee only)
-}
-```
-
 **Output Files:**
 - `userData/results/claim/done.txt` - Successfully claimed wallets
 - `userData/results/claim/failed.txt` - Failed claims
 - `userData/results/claim/errors.txt` - Error details
-
----
 
 #### 6. **Balance Checker**
 
@@ -196,6 +173,8 @@ user2@example.com             0.00320000     1.234567
 ---
 
 ### ⚡ Solana Modules
+
+<img width="549" height="559" alt="3" src="https://github.com/user-attachments/assets/4bb68919-acaf-4ed1-b9e0-0dc62775f464" />
 
 #### 1. **Send Tokens**
 
@@ -223,11 +202,14 @@ Transfer SPL tokens (USDC, etc.) between wallets.
 
 #### 2. **Balance Checker**
 
+<img width="554" height="532" alt="4" src="https://github.com/user-attachments/assets/0ff734ab-e111-481b-b967-41a9b62ddf6b" />
+
 Real-time balance monitoring for SOL and SPL tokens.
 
 **Features:**
 - Multi-wallet support
-- Token account enumeration
+- Token account enumeration![Uploading 4.png…]()
+
 - USD value calculation (when available)
 - Export to CSV/JSON
 
@@ -259,19 +241,9 @@ The app can generate new Solana wallets on demand through the web interface.
 
 ### Main Configuration File
 
-**Location:** `userData/config.json`
+<img width="946" height="574" alt="Screenshot_5" src="https://github.com/user-attachments/assets/26932655-fd5d-4416-9657-967f1131386a" />
 
-```json
-{
-  "rpcUrls": [
-    "https://api.mainnet-beta.solana.com",
-    "https://solana-api.projectserum.com"
-  ],
-  "priorityFeeMicroLamports": 0,
-  "maxRetries": 5,
-  "confirmationTimeout": 30000
-}
-```
+**Location:** `userData/config.json`
 
 ### RPC Configuration
 
@@ -294,8 +266,6 @@ Add your own RPC URLs to `rpcUrls` array in config.json
 ```
 GrassSolAPP/
 ├── GrassSol.exe              # Main executable
-├── START.bat                 # Launcher script
-├── README.txt                # Quick start guide
 ├── public/                   # Web interface
 │   └── index.html
 └── userData/                 # User data directory
