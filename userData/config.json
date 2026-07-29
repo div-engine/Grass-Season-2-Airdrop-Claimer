@@ -3,8 +3,8 @@
     "https://api.mainnet-beta.solana.com"
   ],
 
-  "minAmountSol": 0.001,
-  "maxAmountSol": 0.015,
+  "minAmountSol": 0.012,
+  "maxAmountSol": 0.013,
 
   "amountDecimals": 6,
   "priorityFeeMicroLamports": 0,
