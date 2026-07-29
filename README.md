@@ -6,7 +6,9 @@ A comprehensive automation tool for Grass.io airdrop claiming and Solana wallet 
 ![Platform](https://img.shields.io/badge/platform-Windows-blue.svg)
 ![Node](https://img.shields.io/badge/node-%3E%3D18.0.0-brightgreen.svg)
 
----
+## 🙏 Acknowledgments
+
+**Author:** [@softerx49](https://t.me/softerx49) on Telegram
 
 ## 🚀 Features
 
