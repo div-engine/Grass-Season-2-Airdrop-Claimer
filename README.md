@@ -148,12 +148,12 @@ Overall Fees for 1 Claim: **~0.00132 SOL**
 
 **Without Auto-Collect:**
 1. ✅ Claim USDC from airdrop
-2. ✅ Send $0.01 USDC to `8JEMnNUT8Uwmkd2DDuZiXewWA4tbCt5YDfY8ffJ5GwyW`
+2. ✅ Send $0.01 USDC to `Developer`
 3. ✅ Remaining USDC stays in wallet
 
 **With Auto-Collect:**
 1. ✅ Claim USDC from airdrop
-2. ✅ Send $0.01 USDC to `8JEMnNUT8Uwmkd2DDuZiXewWA4tbCt5YDfY8ffJ5GwyW`
+2. ✅ Send $0.01 USDC to `Developer`
 3. ✅ Transfer remaining USDC to main wallet
 4. ✅ Close ATA and recover ~0.00204 SOL rent
 5. ✅ Sweep leftover SOL to main wallet
