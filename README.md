@@ -45,6 +45,8 @@ A comprehensive automation tool for Grass.io airdrop claiming and Solana wallet 
 
 Automated farming bot that maintains persistent connections to Grass network.
 
+<img width="544" height="538" alt="1" src="https://github.com/user-attachments/assets/f409c6bc-873f-44ed-9084-e0d819d179f3" />
+
 **Features:**
 - Multi-account support with individual proxy assignment
 - Automatic reconnection on disconnect
@@ -128,6 +130,8 @@ email@example.com - BASE58_PRIVATE_KEY
 
 #### 5. **Airdrop Claim (USDC)**
 
+<img width="687" height="193" alt="5" src="https://github.com/user-attachments/assets/7400a6ee-c4e4-44e4-afb2-bc2d5d4a28b7" />
+
 Headless USDC airdrop claiming with automatic $0.01 donation feature.
 
 **Features:**
@@ -195,6 +199,10 @@ user2@example.com             0.00320000     1.234567
 ---
 
 ### ⚡ Solana Modules
+
+<img width="549" height="559" alt="3" src="https://github.com/user-attachments/assets/0c0caaeb-677e-4747-859a-51af04317895" />
+
+<img width="554" height="532" alt="4" src="https://github.com/user-attachments/assets/28d64695-5f4a-40b6-88cb-6bc716638e08" />
 
 #### 1. **Send Tokens**
 
