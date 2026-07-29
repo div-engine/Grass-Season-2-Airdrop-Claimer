@@ -1,0 +1,46 @@
+{
+  "rpcUrls": [
+    "https://api.mainnet-beta.solana.com"
+  ],
+
+  "minAmountSol": 0.001,
+  "maxAmountSol": 0.015,
+
+  "amountDecimals": 6,
+  "priorityFeeMicroLamports": 0,
+  "delayBetweenSendsMs": 500,
+  "confirmBeforeSend": true,
+
+  "tokens": [
+    { "label": "USDC", "mint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v", "stablecoin": true },
+    { "label": "USDT", "mint": "Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB", "stablecoin": true }
+  ],
+
+  "captcha": {
+    "service": "2captcha",
+    "apiKey": "",
+    "_comment": "Supported services: 2captcha, capsolver, capmonster"
+  },
+
+  "wallet": {
+    "_comment": "IMAP settings for wallet export OTP verification. Account credentials are in data/emails.txt (format: email:email_pass:account:account_pass)",
+    "imapTlsInsecure": true,
+    "imapDirect": true,
+    "imapPort": 993,
+    "timeoutMs": 150000,
+    "concurrency": 1,
+    "imapHosts": {
+      "rambler.ru": "imap.rambler.ru",
+      "lenta.ru": "imap.rambler.ru",
+      "ro.ru": "imap.rambler.ru",
+      "myrambler.ru": "imap.rambler.ru",
+      "autorambler.ru": "imap.rambler.ru",
+      "gmx.com": "imap.gmx.com",
+      "gmx.fr": "imap.gmx.com",
+      "gmx.at": "imap.gmx.net",
+      "gmx.net": "imap.gmx.net",
+      "gmail.com": "imap.gmail.com",
+      "outlook.com": "outlook.office365.com"
+    }
+  }
+}
