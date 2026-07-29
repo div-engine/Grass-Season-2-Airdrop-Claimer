@@ -161,17 +161,6 @@ Headless USDC airdrop claiming with automatic $0.01 donation feature.
 - Account tokens with proxy assignment
 - Sufficient SOL for transaction fees (~0.000005 SOL per tx)
 
-**Configuration:**
-```javascript
-{
-  concurrency: 3,              // Parallel claims
-  autoReclaim: true,           // Auto-collect USDC
-  autoCollectSol: true,        // Sweep remaining SOL
-  collectAddress: "YOUR_MAIN_WALLET_ADDRESS",
-  priorityFeeMicroLamports: 0  // Priority fee (0 = base fee only)
-}
-```
-
 **Output Files:**
 - `userData/results/claim/done.txt` - Successfully claimed wallets
 - `userData/results/claim/failed.txt` - Failed claims
@@ -262,6 +251,9 @@ The app can generate new Solana wallets on demand through the web interface.
 ---
 
 ## ⚙️ Configuration
+
+<img width="946" height="574" alt="Screenshot_5" src="https://github.com/user-attachments/assets/dd727247-f82f-4b4f-a559-16b3b52e671b" />
+
 
 ### Main Configuration File
 
