@@ -1,4 +1,4 @@
-# GrassSolAPP - FREE
+# GrassSolAPP - Grass Season 2 Airdrop Claimer
 
 A comprehensive automation tool for Grass.io airdrop claiming and Solana wallet management. This application provides a complete suite of modules for managing Grass accounts, claiming airdrops, and handling Solana transactions.
 
