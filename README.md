@@ -8,7 +8,7 @@ A comprehensive automation tool for Grass.io airdrop claiming and Solana wallet 
 
 ## 🙏 Acknowledgments
 
-**Author:** [@softerx49](https://t.me/softerx49) on Telegram
+**Author:** [@div_engine](https://t.me/div_engine) on Telegram
 
 ## 🚀 Features
 
