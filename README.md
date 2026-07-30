@@ -25,8 +25,8 @@ A comprehensive automation tool for Grass.io airdrop claiming and Solana wallet 
 
 ### Download & Run
 
-1. Download the latest release from [Releases](../../releases)
-2. Extract the ZIP file to any location
+1. Download all files
+2. Fill required config.json data (captcha api_key, rpc if need)
 3. Run `GrassSol.exe`
 4. The application will start automatically
 5. Open your browser to `http://localhost:5555`
