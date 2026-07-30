@@ -457,9 +457,3 @@ This software is provided "as is", without warranty of any kind. Use at your own
 - **Average Claim Time:** 3-5 seconds per wallet
 - **Success Rate:** 95%+ with premium RPC
 - **Transaction Fees:** ~0.000005 SOL per transaction
-
----
-
-**Built with ❤️ by the community, for the community**
-
-**Star ⭐ this repository if you find it helpful!**
