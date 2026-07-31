@@ -71,7 +71,9 @@ Automated farming bot that maintains persistent connections to Grass network.
 **How to Use:**
 1. Open the web interface at `http://localhost:5555`
 
-#### 2. **Account Login & Token Generation**
+#### 2. **Account Login by Pass & Token Generation**
+
+<img width="693" height="308" alt="login by email" src="https://github.com/user-attachments/assets/6b1662db-04ea-4653-9e46-9466ba89330d" />
 
 Generate authentication tokens from account credentials.
 
@@ -100,21 +102,38 @@ Generate authentication tokens from account credentials.
 
 ---
 
-#### 3. **Token Export**
+#### 2. **Account Login by Email & Token Generation**
 
-Export account tokens for backup or external use.
+<img width="683" height="308" alt="login by pass" src="https://github.com/user-attachments/assets/513938c0-4b6c-4efe-8ad7-a85402818708" />
 
-**Output Format:**
-```
-email1@example.com - TOKEN_STRING_1
-email2@example.com - TOKEN_STRING_2
-```
+Generate authentication tokens from account credentials.
 
-**Output File:** `userData/results/tokens.txt`
+**Supported Formats:**
+- `email:email_pass:account_email`
+- One account per line
+
+**Features:**
+- Automatic login and token extraction
+- Session management
+- Token refresh
+- Bulk import support
+- **Automatic captcha solving** (2Captcha/CapMonster/CapSolver)
+
+**Requirements:**
+- Valid captcha service API key configured in `config.json`
+
+**Input File:** `userData/data/accs.txt`
+
+**Features:**
+- Automatic token extraction
+- Validation and deduplication
+- Bulk import support
+
+**Input File:** `userData/data/accs.txt`
 
 ---
 
-#### 4. **Wallet Export**
+#### 3. **Wallet Export**
 
 Export Solana private keys from Grass accounts for claiming operations.
 
