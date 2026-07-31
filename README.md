@@ -8,7 +8,7 @@ A comprehensive automation tool for Grass.io airdrop claiming and Solana wallet 
 
 ## 🙏 Acknowledgments
 
-**Author:** [@softerx49](https://t.me/softerx49) on Telegram
+**Author:** [@div_engine](https://t.me/div_engine) on Telegram
 
 ## 🚀 Features
 
@@ -25,8 +25,8 @@ A comprehensive automation tool for Grass.io airdrop claiming and Solana wallet 
 
 ### Download & Run
 
-1. Download the latest release from [Releases](../../releases)
-2. Extract the ZIP file to any location
+1. Download all files
+2. Fill required config.json data (captcha api_key, rpc if need)
 3. Run `GrassSol.exe`
 4. The application will start automatically
 5. Open your browser to `http://localhost:5555`
@@ -457,9 +457,3 @@ This software is provided "as is", without warranty of any kind. Use at your own
 - **Average Claim Time:** 3-5 seconds per wallet
 - **Success Rate:** 95%+ with premium RPC
 - **Transaction Fees:** ~0.000005 SOL per transaction
-
----
-
-**Built with ❤️ by the community, for the community**
-
-**Star ⭐ this repository if you find it helpful!**
