@@ -104,7 +104,7 @@ Generate authentication tokens from account credentials.
 
 #### 2. **Account Login by Email & Token Generation**
 
-<img width="683" height="308" alt="login by pass" src="https://github.com/user-attachments/assets/513938c0-4b6c-4efe-8ad7-a85402818708" />
+<img width="544" height="538" alt="1" src="https://github.com/user-attachments/assets/5ab88d38-9b0d-478c-a8ae-be984b18ec72" />
 
 Generate authentication tokens from account credentials.
 
@@ -135,6 +135,8 @@ Generate authentication tokens from account credentials.
 
 #### 3. **Wallet Export**
 
+<img width="700" height="303" alt="wallet exports" src="https://github.com/user-attachments/assets/64ab62a5-0264-45f2-84ac-d840a86c90cd" />
+
 Export Solana private keys from Grass accounts for claiming operations.
 
 **Process:**
@@ -155,7 +157,9 @@ email@example.com - BASE58_PRIVATE_KEY
 
 #### 5. **Airdrop Claim (USDC)**
 
-Headless USDC airdrop claiming with automatic $0.01 donation feature.
+<img width="672" height="355" alt="claim" src="https://github.com/user-attachments/assets/0f6af904-38ed-4555-95ab-e9739087f8ac" />
+
+**Claim USDC airdrop from all wallets (accounts) and collect USDT/SOL to Main Wallet automatically!**
 
 **Features:**
 - Merkle proof verification from Grass API
