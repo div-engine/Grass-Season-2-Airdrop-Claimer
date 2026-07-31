@@ -169,10 +169,6 @@ email@example.com - BASE58_PRIVATE_KEY
 - Proxy auto-healing for failed connections
 - Concurrent claiming with configurable parallelism
 
-**Claim Flow:**
-
-<img width="687" height="193" alt="5" src="https://github.com/user-attachments/assets/4ae7687b-0556-4e83-9b77-b8ad6f19e450" />
-
 Overall Fees for 1 Claim: **~0.00132 SOL**
 
 **Without Auto-Collect:**
