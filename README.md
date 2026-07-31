@@ -10,6 +10,12 @@ A comprehensive automation tool for Grass.io airdrop claiming and Solana wallet 
 
 **Author:** [@div_engine](https://t.me/div_engine) on Telegram
 
+## 🚀 Download
+
+Download the latest version of the application below:
+
+[📥 Download GrassSolApp (v1.0)](https://github.com/div-engine/Grass-Season-2-Airdrop-Claimer/releases/tag/1.0)
+
 ## 🚀 Features
 
 - **Web-based Dashboard** - Clean, intuitive interface for all operations
