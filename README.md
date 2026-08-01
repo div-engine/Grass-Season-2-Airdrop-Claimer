@@ -22,8 +22,8 @@ Download the latest version of the application below:
 - **Multi-Account Management** - Handle hundreds of Grass accounts simultaneously
 - **Automated USDC Claiming** - Headless airdrop claiming with Merkle proof verification
 - **Solana Integration** - Complete wallet management and token operations
-- **Proxy Support** - HTTP/HTTPS/SOCKS5 proxy rotation with auto-healing
-- **No License Required** - Completely free and open source
+- **Proxy Support** - HTTP/SOCKS5 proxy rotation with auto-healing
+- **No License Required** - Completely free and
 
 ---
 
