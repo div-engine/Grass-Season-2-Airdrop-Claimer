@@ -75,10 +75,9 @@ Generate authentication tokens from account credentials.
 
 ---
 
-#### 5. **Airdrop Claim (USDC)**
+#### 2. **Airdrop Claim (USDC)**
 
 <img width="715" height="825" alt="2" src="https://github.com/user-attachments/assets/6dccc889-055a-4ad9-a463-a366f517b742" />
-
 
 **Claim USDC airdrop from all wallets (accounts) and collect USDT/SOL to Main Wallet automatically!**
 
@@ -98,6 +97,28 @@ Overall Fees for 1 Claim: **~0.00132 SOL**
 - userData/wallets/wallet-main.txt [Main wallet — needs ~0.008 SOL per un-claimed account]
 
 Notice: **$0.01** from each claim will go to `Developer Fund`
+
+---
+
+#### 3. **Allocation Checker**
+
+<img width="721" height="1014" alt="3" src="https://github.com/user-attachments/assets/ce2cad2e-f9d3-4e04-b3af-5b8363dc72d5" />
+
+Bulk check Airdrop Allocation for all accounts.
+
+**Required Files:**
+- Required Files:
+- userData/data/tokens.txt [Format: email - token]
+- userData/data/proxies.txt [Formats: http(socks5)://user:pass@ip:port, http(socks5)://ip:port:user:pass]
+
+#### 3. **Up TO Date Checker**
+
+Bulk check latest updated version for both apps.
+
+**Required Files:**
+- Required Files:
+- userData/data/tokens.txt [Format: email - token]
+- userData/data/proxies.txt [Formats: http(socks5)://user:pass@ip:port, http(socks5)://ip:port:user:pass]
 
 ---
 
