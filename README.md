@@ -50,7 +50,7 @@ Download the latest version of the application below:
 
 ### 🌿 Grass Modules
 
-<img width="544" height="538" alt="1" src="https://github.com/user-attachments/assets/5ab88d38-9b0d-478c-a8ae-be984b18ec72" />
+<img width="691" height="552" alt="1" src="https://github.com/user-attachments/assets/ced017f9-92a3-4343-a9a1-0295a0905644" />
 
 #### 1. **Grass Bot**
 
