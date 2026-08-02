@@ -79,7 +79,7 @@ Generate authentication tokens from account credentials.
 
 <img width="715" height="825" alt="2" src="https://github.com/user-attachments/assets/6dccc889-055a-4ad9-a463-a366f517b742" />
 
-**Claim USDC airdrop from all wallets (accounts) and collect USDT/SOL to Main Wallet automatically!**
+**Claim USDC airdrop from all wallets (accounts) and collect USDC/SOL to Main Wallet automatically!**
 
 **Features:**
 - Fund account wallets from main wallet
