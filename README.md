@@ -79,11 +79,7 @@
 
 <img width="715" height="825" alt="2" src="https://github.com/user-attachments/assets/6dccc889-055a-4ad9-a463-a366f517b742" />
 
-<<<<<<< HEAD
 **Клейм USDC airdrop со всех кошельков (аккаунтов) и автоматический сбор USDT/SOL на основной кошелек!**
-=======
-**Claim USDC airdrop from all wallets (accounts) and collect USDC/SOL to Main Wallet automatically!**
->>>>>>> 3be9dce156b308c50de4959c3fe5ab9b1d31bbc7
 
 **Возможности:**
 - Пополнение кошельков аккаунтов с основного кошелька
