@@ -82,10 +82,10 @@ Generate authentication tokens from account credentials.
 **Claim USDC airdrop from all wallets (accounts) and collect USDT/SOL to Main Wallet automatically!**
 
 **Features:**
-- Fund account wallets from main wallet
 - Claim **USDC**
 - Closing **ATA RENT**
 - Collecting back to **Main** wallet all balance **SOL/USDC** from all wallets
+- All transactions are paid directly from the **Main** wallet, eliminating the need to fund individual account wallets.
 - Updating Grass account broken **passwords** with new ones
 
 Overall Fees for 1 Claim: **~0.00132 SOL**
