@@ -12,9 +12,9 @@
 
 ## 🚀 Скачать
 
-Скачайте последнюю версию приложения ниже:
+Скачайте последнюю версию приложения ниже с телеграм бота:
 
-[📥 Скачать GrassSolApp](https://github.com/div-engine/Grass-Season-2-Airdrop-Claimer/releases/tag/1.0)
+[📥 Скачать GrassSolApp](https://t.me/softoniq_bot)
 
 ## 🚀 Возможности
 
